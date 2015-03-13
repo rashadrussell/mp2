@@ -20,6 +20,10 @@ $(document).ready(function() {
 
 		var sections = [];
 
+		$('nav').css({
+			'transform': 'scale(1.1)'
+		});
+
 		if( $(document).scrollTop() > 80 ) {
 			$('nav').css('fontSize', '12px');
 			$('nav').css('padding', '5px');
