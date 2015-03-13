@@ -1,0 +1,34 @@
+<div class="movieHuntGallery row">
+	<div class="movieHuntGalleryContainer large-12 large-centered columns">
+		<ul class="genres button-group">
+			<li><span ng-click="genreFilter = null" class="button">All</span></li>
+			<li><span ng-click="genreFilter = {genre: 'Action'}" class="button">Action</span></li>
+			<li><span ng-click="genreFilter = {genre: 'Adventure'}" class="button">Adventure</span></li>
+			<li><span ng-click="genreFilter = {genre: 'Animation'}" class="button">Animation</span></li>
+			<li><span ng-click="genreFilter = {genre: 'Biography'}" class="button">Biography</span></li>
+			<li><span ng-click="genreFilter = {genre: 'Comedy'}" class="button">Comedy</span></li>
+			<li><span ng-click="genreFilter = {genre: 'Crime'}" class="button">Crime</span></li>
+			<li><span ng-click="genreFilter = {genre: 'Drama'}" class="button">Drama</span></li>
+			<li><span ng-click="genreFilter = {genre: 'Family'}" class="button">Family</span></li>
+			<li><span ng-click="genreFilter = {genre: 'Fantasy'}" class="button">Fantasy</span></li>
+			<li><span ng-click="genreFilter = {genre: 'Film-Noir'}" class="button">Film-Noir</span></li>
+			<li><span ng-click="genreFilter = {genre: 'History'}" class="button">History</span></li>
+			<li><span ng-click="genreFilter = {genre: 'Horror'}" class="button">Horror</span></li>
+			<li><span ng-click="genreFilter = {genre: 'Music'}" class="button">Music</span></li>
+			<li><span ng-click="genreFilter = {genre: 'Musical'}" class="button">Musical</span></li>
+			<li><span ng-click="genreFilter = {genre: 'Mystery'}" class="button">Mystery</span></li>
+			<li><span ng-click="genreFilter = {genre: 'Romance'}" class="button">Romance</span></li>
+			<li><span ng-click="genreFilter = {genre: 'Sci-Fi'}" class="button">Sci-Fi</span></li>
+			<li><span ng-click="genreFilter = {genre: 'Sport'}" class="button">Sport</span></li>
+			<li><span ng-click="genreFilter = {genre: 'Thriller'}" class="button">Thriller</span></li>
+			<li><span ng-click="genreFilter = {genre: 'War'}" class="button">War</span></li>
+			<li><span ng-click="genreFilter = {genre: 'Western'}" class="button">Western</span></li>
+		</ul>
+
+		<ul class="movies large-block-grid-10">
+			<li class="movieItem" ng-repeat="movie in courseInfo | filter:genreFilter">
+				<a ng-href="#/details/{{movie.rank}}"><img ng-src="/data/images/{{movie.imdbID}}.jpg" /></a>
+			</li>
+		</ul>
+	</div>
+</div>

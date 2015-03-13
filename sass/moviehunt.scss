@@ -1,0 +1,51 @@
+ #MovieHunt {
+ 	
+ 	header, nav {
+ 		text-align: center;
+ 		margin-bottom: 20px;
+ 	}
+
+ 	nav a {
+ 		margin-right: 20px;
+ 	}
+
+ 	.movieHuntList {
+ 		background-color: #b4d8e7; 
+ 		padding: 20px;
+
+ 		#movie-list {
+ 			list-style: none;
+
+ 			li {
+ 				height: 100px;
+
+ 				.moviePhoto, .movieMetaData {
+ 					display: inline-block;
+ 				}
+
+ 				.moviePhoto {
+ 					width: 60px;
+ 					height: 80px;
+ 					vertical-align: top;
+ 				}
+
+ 				.movieMetaData {
+ 					p {
+ 						margin-bottom: 5px;
+ 					}
+ 				}
+ 			}
+ 		}
+ 	}
+
+ 	.movieGallery {
+
+ 		li.movieItem {
+ 		}
+
+ 		.movies img {
+ 			width: 80px;
+ 			height: 100px;
+ 		}
+ 	}
+ }

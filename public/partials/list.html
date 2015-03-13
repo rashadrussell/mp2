@@ -1,0 +1,24 @@
+<div class="movieHuntList row">
+	<div class="movieHuntListContainer large-6 large-centered columns">
+		<div id="searchBox">
+			<input class="movie-input" ng-model="movieInput" type="text" placeholder="Search for movies" />
+			<select ng-model="sortOption">
+				<option ng-repeat="option in sortBy">{{option}}</option>
+			</select>
+			<input ng-model="reverse" ng-value= "false" type="radio" name="order" value="ascending" />ascending
+			<input ng-model="reverse" ng-value="true" type="radio" name="order" value="descending" />descending
+		</div>
+
+		<ul id="movie-list">
+			<li ng-repeat="movie in courseInfo | search:movieInput | orderBy:sortOption:reverse">
+				<a ng-href="#/details/{{movie.rank}}">
+					<img class="moviePhoto" ng-src="./data/images/{{movie.imdbID}}.jpg" />
+					<div class="movieMetaData"> 
+						<p>{{movie.title}}</p>
+						<p>Rank: {{movie.rank}}</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>

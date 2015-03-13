@@ -1,60 +1,197 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>MP2 Starter</title>
-  <script src="./lib/angular/angular.min.js"></script>
-  <script src="./js/controllers.js"></script>
-  <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="./foundation/css/foundation.css">
-  
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Rashad Russell</title>
+	<script src="./lib/angular/angular.min.js"></script>
+	<link rel="stylesheet" href="./foundation/css/foundation.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.css"/>
+	<link rel="stylesheet" href="./css/styles.css">
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 
 
 <body>
 
-	<nav class="top-bar" data-topbar role="navigation">
-	  <ul class="title-area">
-	    <li class="name">
-	      <h1><a href="#">MP2</a></h1>
-	    </li>
-	     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-	    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-	  </ul>
+	<header id="header">
+		<div class="fixed">
+			<nav>
+			    <ul class="menu-items">
+			      <li><a href="#header">Home</a></li>
+			      <li><a href="#about">About</a></li>
+			      <li><a href="#interests">Interests</a></li>
+			      <li><a href="#skills">Skills</a></li>
+			      <li><a href="#hacks">Hacks</a></li>
+			      <li><a class="contact"><i class="fa fa-envelope-o fa-1x"></i></a></li>
+			      <li><a class="linkedin" target="_blank" href="http://www.linkedin.com/in/rashadrussell/"><i class="fa fa-linkedin-square fa-1x"></i></a></li>
+			    </ul>
+			</nav>
+		</div>
 
-	  <section class="top-bar-section">
-	    <!-- Left Nav Section -->
-	    <ul class="left">
-	      <li><a href="https://courses.engr.illinois.edu/cs498rk1/index.html">CS498RK</a></li>
-	    </ul>
-	  </section>
-	</nav>
+		<div class="banner row">
+			<div class="large-8 large-centered columns">
+				<h1>Rashad Russell</h1>
+				<h1>Software Engineer</h1>
+			</div>
+		</div>
 
-	<div class="row" ng-app = "demoApp">
-		<div class="panel small-centered columns small-12 medium-4">
-    	<input id="nameInput" ng-model="name" placeholder="Your Name" autofocus>
+	</header>
+
+	<main>
+
+		<section id="about">
+			<div class="container row">
+				<div class="large-3 medium-2 medium-centered small-7 small-centered large-uncentered columns">
+					<div class="avatar"></div>
+				</div>
+
+				<div class="large-9 columns">
+					<h2>About Me</h2>
+					<p>
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+					</p>
+					<p>
+						Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="interests">
+			<div class="container row">
+				<div class="large-3 columns">
+					<h2>Interests</h2>
+				</div>
+
+				<div class="large-9 columns">
+					<h4>Frontend Dev</h4>
+					<p>
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+					</p>
+					<h4>Machine Learning</h4>
+					<p>
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+					</p>
+					<h4>Natural Language Processing</h4>
+					<p>
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="skills">
+			<div class="container row">
+				<div class="large-3 columns">
+					<h2>Skills</h2>
+				</div>
+
+				<div class="large-9 columns">
+					<h4>HTML5</h4>
+					<div class="progress [radius round]">
+					  <span class="meter" style="width:95%;"></span>
+					</div>
+
+					<h4>CSS3</h4>
+					<div class="progress [radius round]">
+					  <span class="meter" style="width:80%;"></span>
+					</div>
+
+					<h4>JavaScript</h4>
+					<div class="progress [radius round]">
+					  <span class="meter" style="width:85%;"></span>
+					</div>
+
+					<h4>Python</h4>
+					<div class="progress [radius round]">
+					  <span class="meter" style="width:80%;"></span>
+					</div>
+
+					<h4>Java</h4>
+					<div class="progress [radius round]">
+					  <span class="meter" style="width:75%;"></span>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+
+		<section id="hacks">
+			<div class="container row">
+				<div class="large-3 columns">
+					<h2>Hacks</h2>
+				</div>
+
+				<div class="large-9 columns">
+					<ul class="example-orbit" data-orbit>
+						<li class="hack">
+							<img src="/img/codeBlue_img.png" alt="slide 1" />
+						</li>
+						<li class="hack">
+							<img src="/img/pearlEdit_img.png" alt="slide 3" />
+						</li>
+						<li class="hack">
+							<img src="/img/sixthSense_img.png" alt="slide 2" />
+						</li>
+						<li class="hack">
+							<video src="./video/SixthSense.mp4" controls></video>
+						</li>
+					</ul>
+				</div>
+		</section>
+
+
+	</main>
+
+	<footer>
+		<p>&#169; CopyRight 2015 All Rights Reserved</p>
+	</footer>
+
 	
-		<h3>Hello, {{name}}</h3>
+	<script src="./lib/jquery-2.1.3.min/index.js"></script>
+	<script src="./foundation/js/foundation.min.js"></script>
+    <script>
+		$(document).foundation();
+	</script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+	<script src="./js/script.js"></script>
+	<script src="http://localhost:35729/livereload.js"></script>
 
+
+	<script id="form-template" type="template-x/modal-form-template">
+		<div class="modal">
+			<div class="form-container">
+				<form>
+					<div class="row">
+						<div class="large-12 columns">
+							<input type="text" placeholder="Name" />
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="large-12 columns">
+							<input type="text" placeholder="Email" />
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="large-12 columns">
+							<textarea placeholder="Message"></textarea>
+						</div>
+					</div>
+					</form>
+
+					<div class="row">
+						<div class="large-12 columns">
+							<button type="submit">Send</button>
+						</div>
+					</div>
+				</form>
+			</div>
 		</div>
-	</div>
-	<div class="row">
-		<div class="alert columns small-12 large-6">
-			<div><img src="http://lorempixel.com/400/200/cats" /></div>
+	</script>
 
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit velit temporibus, fugit recusandae aliquid officiis molestias possimus reprehenderit quos. Facere dolores, nulla optio recusandae. Voluptatibus aut esse nulla saepe sit ut amet, neque officia officiis quam ea ex adipisci, quaerat, eligendi veniam iste temporibus. Aperiam ea quos fugiat provident, voluptatum reiciendis mollitia voluptates, odio quam at, deserunt animi voluptas odit aliquid saepe voluptate distinctio excepturi. Deserunt, id esse fuga cum accusantium eos obcaecati odit veritatis molestias illum sequi repellat, quisquam quasi architecto velit blanditiis perferendis, nulla eligendi non laboriosam. Eligendi sint, voluptatem ipsam dolore eum temporibus dicta, quaerat ea molestias placeat, asperiores minima sit explicabo! Repellat qui ducimus ipsum. Dignissimos at, aliquid vitae asperiores omnis provident voluptatibus, itaque delectus. Porro corrupti vel culpa, delectus in doloremque nam ratione aliquid ullam non iusto magnam, repudiandae, magni a quasi voluptatum inventore exercitationem quibusdam sint autem totam ex quia possimus. Similique ad fugiat eligendi magnam ab, ex nulla unde eos, tempora quis consequatur maxime inventore perferendis voluptatem non nam dignissimos voluptatum dolor quasi quidem molestias maiores doloribus. Omnis ipsa fugit amet! Eum repellat deleniti fuga omnis in maiores rem iusto, qui quasi ipsum illum odit laudantium molestiae, nostrum ipsam fugit animi atque! Non.
-		</div>
-		<div class="columns small-12 large-6">
-	  	<div><img src="http://lorempixel.com/400/200/nature" />	</div>
-	  	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nobis facere sint placeat necessitatibus reprehenderit amet quas minima beatae illo nemo labore, maxime adipisci, accusamus voluptates repudiandae quia, ut excepturi ea quis obcaecati molestias error architecto unde? Hic vel facere porro magnam ipsam omnis eos ducimus, architecto velit beatae modi natus sunt suscipit quo optio qui repellat, blanditiis consequuntur. Fuga omnis porro quis inventore in voluptatum veritatis illum beatae rem. Labore nam saepe cupiditate quod, itaque quidem libero, quas tempore incidunt, quos earum repudiandae recusandae quia voluptas ducimus inventore, expedita. Alias minima, commodi aut, aspernatur laborum quae mollitia pariatur suscipit ad accusamus a ipsam fuga necessitatibus voluptas esse error reprehenderit provident. Sequi architecto ipsum qui enim labore sunt incidunt ullam pariatur. Minus porro error ipsa perferendis exercitationem debitis dicta asperiores nostrum cum voluptas qui dolores odit numquam incidunt cumque eos nemo architecto repudiandae adipisci, eius ut, aut suscipit minima perspiciatis consectetur. Ratione quisquam neque voluptatem? Qui, aspernatur iste quaerat iure. Debitis nobis minus animi mollitia libero temporibus perferendis ratione, inventore ullam, eos ut porro, velit quibusdam rerum possimus, ex! Quidem consectetur obcaecati ad veritatis. Velit illum aliquid tenetur, nisi illo quaerat labore nemo id sequi eveniet consequuntur. Voluptate, similique, rem!</div>
-	</div>
- 
-
-
-  <script src="./js/script.js"></script>
-  <script src="./lib/jquery-2.1.3.min/index.js"></script>
-  <script src="./foundation/js/foundation.min.js"></script>
-  <script src="http://localhost:35729/livereload.js"></script>
 </body>
 </html>

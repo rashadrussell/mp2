@@ -1,0 +1,16 @@
+<div class="movieDetail row">
+	<div class="movieDetailContainer large-6 large-centered columns">
+
+		<p>{{chosenMovie.title}}</p>
+		<p>Rank: {{chosenMovie.rank}}</p>
+		<img ng-src="/data/images/{{chosenMovie.imdbID}}.jpg" />
+		<p>{{chosenMovie.plot}}</p>
+		<p>Release Date: {{chosenMovie.released}}</p>
+		<p>Runtime: {{chosenMovie.runtime}}</p>
+		<p>Awards: {{chosenMovie.awards}}</p>
+
+		<a ng-href="#/details/{{chosenMovie.rank - 1}}" class="button">Prev</a>
+		<a ng-href="#/details/{{chosenMovie.rank + 1}}" class="button">Next</a>
+
+	</div>
+</div>
