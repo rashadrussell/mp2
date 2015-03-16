@@ -2,7 +2,7 @@ var movieHuntControllers = angular.module('movieHuntControllers', []);
 
 
 movieHuntControllers.controller('MovieListCtrl', ['$scope', '$http', function($scope, $http) {
-	$http.get('/data/imdb250.json').success(function(data) {
+	$http.get('./data/imdb250.json').success(function(data) {
 		$scope.courseInfo = data;
 		$scope.artistOrder = 'name';
 		$scope.sortBy = ["title", "rank"];
@@ -13,7 +13,7 @@ movieHuntControllers.controller('MovieListCtrl', ['$scope', '$http', function($s
 
 
 movieHuntControllers.controller('MovieGalleryCtrl', ['$scope', '$http', function($scope, $http) {
-	$http.get('/data/imdb250.json').success(function(data) {
+	$http.get('./data/imdb250.json').success(function(data) {
 		var uniqGenres = {};
 		$scope.courseInfo = data;
 		$scope.genreFiler = null;
@@ -32,7 +32,7 @@ movieHuntControllers.controller('MovieGalleryCtrl', ['$scope', '$http', function
 
 movieHuntControllers.controller('MovieDetailCtrl', ['$scope', '$http', '$routeParams', 
 	function($scope, $http, $routeParams) {
-		$http.get('/data/imdb250.json').success(function(data) {
+		$http.get('./data/imdb250.json').success(function(data) {
 			$scope.courseInfo = data;
 			$scope.chosenMovie;
 
