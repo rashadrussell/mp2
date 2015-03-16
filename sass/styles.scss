@@ -11,7 +11,7 @@
 
 header {
 
-	background: url('/data/images/header_bg.jpg');
+	background: url('./data/images/header_bg.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	height: 100%;
@@ -90,7 +90,7 @@ header {
 	.avatar {
 		width: 200px;
 		height: 200px;
-		background: url('/data/images/avatar.jpg');
+		background: url('./data/images/avatar.jpg');
 		background-size: 125% auto;
 		background-position: -50px -50px;
 		border-radius: 100%;
